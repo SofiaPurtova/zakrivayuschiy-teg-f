@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --inter: 'Inter';
+    --pressstart2p: 'PressStart2P';
+    --title-weight: 700px;
+    --text-weight: 400px;
+
+    --bkg-color: rgb(255, 255, 255, 1);
+    --button-text-color: rgb(255, 255, 255, 1); 
+    --accent-color: rgb(0, 0, 0, 1);
+    --accent-color-for-active-theme: rgb(0, 0, 0, 0.6);
+    --watermark-color: rgb(0, 0, 0, 0.5);
+    --watermark-shadow-color: rgb(255, 255, 255, 0.5);
+
+    --bkg-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
