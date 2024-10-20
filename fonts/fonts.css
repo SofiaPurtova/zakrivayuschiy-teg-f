@@ -28,3 +28,17 @@
     src: url(./Inter-Variable.woff2) format('woff2');
     font-weight: 700;
 }
+
+@font-face {
+    font-family: 'Inter';
+    local: ('Inter');
+    src: url(./Inter-Variable.woff2) format('woff2');
+    font-weight: 465;
+}
+
+@font-face {
+    font-family: 'Inter';
+    local: ('Inter');
+    src: url(./Inter-Variable.woff2) format('woff2');
+    font-weight: 785;
+}
