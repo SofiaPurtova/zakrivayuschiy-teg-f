@@ -1,9 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --inter: 'Inter', sans-serif;
-    --pressstart2p: 'PressStart2P';
-    --title-weight: 700px;
-    --text-weight: 400px;
+    --pressstart2p: 'Press Start 2P';
+    --title-weight: 700;
+    --text-weight: 400;
 
     --bkg-color: rgb(255, 255, 255, 1);
     --button-text-color: rgb(255, 255, 255, 1);
@@ -17,10 +17,4 @@
     --bkg-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-}
-
-@supports (font-variation-settings: normal) {
-    :root {
-        --inter: 'Inter-Variable', sans-serif;
-    }
 }

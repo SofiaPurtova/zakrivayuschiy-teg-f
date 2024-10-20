@@ -5,10 +5,10 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-    --inter: 'Inter';
-    --pressstart2p: 'PressStart2P';
-    --title-weight: 700px;
-    --text-weight: 400px;
+    --inter: 'Inter', sans-serif;
+    --pressstart2p: 'Press Start 2P';
+    --title-weight: 700;
+    --text-weight: 400;
 
     --bkg-color: rgb(255, 255, 255, 1);
     --button-text-color: rgb(255, 255, 255, 1);
@@ -26,9 +26,9 @@
 
 :root.theme-dark {
     --inter: 'Inter', sans-serif;
-    --pressstart2p: 'PressStart2P';
-    --title-weight: 785px;
-    --text-weight: 465px;
+    --pressstart2p: 'Press Start 2P';
+    --title-weight: 785;
+    --text-weight: 465;
 
     --bkg-color: rgb(0, 0, 0, 1);
     --button-text-color: rgb(0, 204, 20, 1);
@@ -48,9 +48,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --inter: 'Inter', sans-serif;
-        --pressstart2p: 'PressStart2P';
-        --title-weight: 785px;
-        --text-weight: 465px;
+        --pressstart2p: 'Press Start 2P';
+        --title-weight: 785;
+        --text-weight: 465;
 
         --bkg-color: rgb(0, 0, 0, 1);
         --button-text-color: rgb(0, 204, 20, 1);
@@ -64,11 +64,5 @@
         --bkg-image: repeating-linear-gradient(to right, #000000 0 2px, transparent 2px 4px),
                     repeating-linear-gradient(to bottom, #000000 0 2px, transparent 2px 4px),
                     linear-gradient(to bottom, #007f0c 0.01%, #004306 100%);
-    }
-}
-
-@supports (font-variation-settings: normal) {
-    :root {
-        --inter: 'Inter-Variable', sans-serif;
     }
 }
