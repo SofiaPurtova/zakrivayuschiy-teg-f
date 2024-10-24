@@ -10,7 +10,7 @@
     --accent-color: rgb(0, 0, 0, 1);
     --accent-color-for-active-theme: rgb(0, 0, 0, 0.6);
     --watermark-color: rgb(0, 0, 0, 0.5);
-    --watermark-shadow-color: rgb(255, 255, 255, 0.5);
+    --watermark-shadow-color: rgb(255, 255, 255);
     --hearth-fill-color: red;
     --contour-color: rgb(0, 0, 0, 1);
 
