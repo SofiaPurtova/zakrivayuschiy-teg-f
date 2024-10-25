@@ -26,6 +26,7 @@
 }
 
 .page {
+  font-variation-settings: 'wght' var(--text-weight, 400);
   inline-size: 100%;
   min-inline-size: 375px;
   max-inline-size: 700px;
@@ -188,6 +189,10 @@
   }
 
   z-index: 1;
+
+  @media (width <= 700px) {
+      right: 13px;
+  }
 }
 
 .upper {
@@ -195,8 +200,8 @@
 }
 
 .title-decor {
+  font-variation-settings: 'wght' var(--title-weight, 700);
   font-family: var(--inter, 'Inter');
-  font-weight: var(--title-weight);
   font-size: 18px;
   line-height: 21px;
   padding: 5px 10px;
@@ -269,12 +274,15 @@
 }
 
 .card__icon-button {
+  display: grid;
+  place-items: center;
+  block-size: 38px;
   padding: 0;
-  height: 34px;
-  margin: 0 5px 25px 0;
+  margin: 0 10px 25px 0;
   border: none;
   background-color: inherit;
   outline: 2px solid transparent;
+  outline-offset: -2px;
 }
 
 .card__icon-button:hover {
@@ -378,7 +386,7 @@
 
 .button-to-save {
   justify-self: center;
-  margin: 50px clamp(2.1875rem, 1.3292rem + 3.662vw, 4.625rem) clamp(6.25rem, 4.9736rem + 5.446vw, 9.875rem);
+  margin: 50px clamp(2.1875rem, 1.3292rem + 3.662vw, 4.625rem) 100px;
   padding: 0 15px 0 15px;
   display: flex;
   gap: 10px;
@@ -393,7 +401,6 @@
 
   @media (width <= 700px) {
     flex-direction: column;
-    margin-block-end: 20px;
     max-block-size: 84px;
     max-inline-size: 306px;
   }
@@ -458,16 +465,20 @@
 .dialog {
   padding: 0;
   inline-size: 100%;
-  min-inline-size: 341px;
   max-inline-size: 353px;
   block-size: 191px;
+
+  @media (width < 700px) {
+    max-inline-size: 341px;
+  }
 }
 .dialog[open] {
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--bkg-color);
   border: 2px solid var(--accent-color);
+  
 }
 
 .dialog[open] .dialog__text {
@@ -494,13 +505,19 @@
   grid-template-columns: 39px min-content;
   justify-content: center;
   align-content: center;
-  gap: 10px;
+  gap: 20px;
   margin: 20px 40px;
+
+  @media (width < 700px) {
+    gap: 10px;
+  }
 }
 
 .dlg .floppy-svg {
   inline-size: 39px;
   block-size: 39px;
+  align-self: center;
+  justify-self: left;
 }
 
 .dialog::backdrop {
